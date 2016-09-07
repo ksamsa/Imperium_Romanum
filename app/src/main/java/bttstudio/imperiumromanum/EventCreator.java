@@ -33,8 +33,7 @@ public class EventCreator {
 
         String line;
 /*
-        public String event_name;
-        public String event_text;
+
         public String choice_A;
         public int age_change_A;
         public int health_change_A;
@@ -59,12 +58,41 @@ public class EventCreator {
                     String parameter = line.substring(0, line.indexOf("=") - 1).trim();
                     String value = line.substring(line.indexOf("=") + 2);
 
-
-                    if (Objects.equals(parameter, "id")) {
-                        System.out.println("adding event");
+                switch(parameter){
+                    case "event_id":
                         events.add(new Event());
                         events.get(events.size() - 1).setEventId(Integer.parseInt(value));
-                    } else {
+                        break;
+                    case "event_weight":
+                        break;
+                    case "event_name":
+                        break;
+                    case "event_text":
+                        break;
+                    case "choice_A":
+                        break;
+                    case "age_change_A":
+                        break;
+                    case "health_change_A":
+                        break;
+                    case "wealth_change_A":
+                        break;
+                    case "fame_change_A":
+                        break;
+                    case "next_quest_A":
+                        break;
+                    case "choice_B":
+                        break;
+                    case "age_change_B":
+                        break;
+                    case "health_change_B":
+                        break;
+                    case "wealth_change_B":
+                        break;
+                    case "fame_change_B":
+                        break;
+                    case "next_quest_B":
+                        break;
 
                     }
                 }
