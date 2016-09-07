@@ -63,7 +63,7 @@ public class EventCreator {
                         events.add(new Event());
                         events.get(events.size() - 1).setEventId(Integer.parseInt(value));
                         break;
-                    case "event_weight":
+                    case "event_weight1":
                         break;
                     case "event_name":
                         break;
