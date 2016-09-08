@@ -16,10 +16,16 @@ public class MainActivity extends AppCompatActivity {
         Resources res = getResources();
 
         ArrayList<Event> eventArrayList = new EventCreator().readEventsFile(res,R.raw.events_file);
-        System.out.println(eventArrayList.get(1).getEventId());
+
+        for(int ii = 0; ii<10; ii++){
+            Event current_event = new EventPicker().selectRandomEvent(eventArrayList);
+
+            System.out.println("Event chosen: " + current_event.getEventId());
+        }
+
     }
 
     private void update(){
-        ArrayList<Event> eventArrayList = new EventCreator().events;
+
     }
 }

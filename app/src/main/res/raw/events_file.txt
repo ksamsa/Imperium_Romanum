@@ -1,5 +1,9 @@
 
 event_id = 1
-
+event_weight = 100
 
 event_id = 2
+event_weight = 1000
+
+event_id = 3
+event_weight = 50
