@@ -36,8 +36,13 @@ public class EventCreator {
                 if(line.length() == 0){
                 }
                 else{
+
                     String parameter = line.substring(0, line.indexOf("=") - 1).trim();
                     String value = line.substring(line.indexOf("=") + 2);
+
+                    Event event = new Event();
+
+
 
                 switch(parameter){
                     case "event_id":

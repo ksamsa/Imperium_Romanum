@@ -23,14 +23,16 @@ public class EventPicker {
         HashMap<Integer,Integer> event_weights = new HashMap<>();
         int total_weight = 0;
 
+        System.out.println(events_list.get(0).event_id);
+        System.out.println(events_list.get(0).event_weight);
         for(int ii = 0; ii<events_list.size(); ii++){
             event_weights.put(events_list.get(ii).event_id, events_list.get(ii).event_weight);
             total_weight = total_weight + events_list.get(ii).event_weight;
         }
 
+        System.out.println(total_weight);
         //Gets a random weight
         int random_weight = rng.nextInt(total_weight);
-        System.out.println("Random wight: " + random_weight);
 
         //Gets all the event ids for randomization into an ArrayList
         ArrayList<Integer> event_ids = new ArrayList<>();
@@ -47,11 +49,6 @@ public class EventPicker {
         while(event_found == false){
             temp_event = rng.nextInt(event_ids.size());
             temp_weight = temp_weight + event_weights.get(event_ids.get(temp_event));
-
-           /*
-            System.out.println("Temp event: " + temp_event);
-            System.out.println("Temp weight: " + temp_weight);
-           */
 
             //Compares wights and returns chosen Event if conditions are met
             if(temp_weight >= random_weight){

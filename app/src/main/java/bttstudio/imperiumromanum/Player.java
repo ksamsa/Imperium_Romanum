@@ -5,17 +5,17 @@ package bttstudio.imperiumromanum;
  */
 public class Player {
 
-    public String name;
-    public int age;
-    public int health;
-    public int wealth;
-    public int fame;
+    public String name = "Test";
+    public int age = 1;
+    public int health = 100;
+    public int wealth = 10;
+    public int fame = 0;
     public int god_1;
     public int god_2;
     public int god_3;
 
 
-    public void updateName(String new_name){
+    public void setName(String new_name){
         name = new_name;
     }
 
@@ -53,5 +53,13 @@ public class Player {
 
     public int getFame(){
         return fame;
+    }
+
+    public void changeGod(int add_god_1){
+        fame = god_1 + add_god_1;
+    }
+
+    public int getGod(){
+        return god_1;
     }
 }
