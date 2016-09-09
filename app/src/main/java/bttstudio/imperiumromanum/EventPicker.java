@@ -23,14 +23,12 @@ public class EventPicker {
         HashMap<Integer,Integer> event_weights = new HashMap<>();
         int total_weight = 0;
 
-        System.out.println(events_list.get(0).event_id);
-        System.out.println(events_list.get(0).event_weight);
+
         for(int ii = 0; ii<events_list.size(); ii++){
             event_weights.put(events_list.get(ii).event_id, events_list.get(ii).event_weight);
             total_weight = total_weight + events_list.get(ii).event_weight;
         }
 
-        System.out.println(total_weight);
         //Gets a random weight
         int random_weight = rng.nextInt(total_weight);
 

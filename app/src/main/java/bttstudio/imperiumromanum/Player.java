@@ -10,7 +10,7 @@ public class Player {
     public int health = 100;
     public int wealth = 10;
     public int fame = 0;
-    public int god_1;
+    public int god_1 = 0;
     public int god_2;
     public int god_3;
 

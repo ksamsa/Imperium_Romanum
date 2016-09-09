@@ -41,7 +41,7 @@ public class EventCreator {
                     String value = line.substring(line.indexOf("=") + 2);
 
                     Event event = new Event();
-
+                    System.out.println(value);
 
 
                 switch(parameter){

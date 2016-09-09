@@ -10,16 +10,16 @@ public class Event {
     public String event_name;
     public String event_text;
     public String choice_A;
-    public int age_change_A;
-    public int health_change_A;
-    public int wealth_change_A;
-    public int fame_change_A;
-    public int next_quest_A;
+    public int age_change_A = 0;
+    public int health_change_A = 0;
+    public int wealth_change_A = 0;
+    public int fame_change_A = 0;
+    public int next_quest_A = 0;
     public String choice_B;
-    public int age_change_B;
-    public int health_change_B;
-    public int wealth_change_B;
-    public int fame_change_B;
+    public int age_change_B = 0;
+    public int health_change_B = 0;
+    public int wealth_change_B = 0;
+    public int fame_change_B = 0;
     public int next_quest_B;
 
 
